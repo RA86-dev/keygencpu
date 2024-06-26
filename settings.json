@@ -1,0 +1,6 @@
+{
+  "use_static_num": false,
+  "static_number": 50,
+  "key_length": 255,
+  "hex_length": 16
+}
