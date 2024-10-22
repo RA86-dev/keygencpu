@@ -130,8 +130,12 @@ print('Keygen CPU Test')
 print('The Keygen CPU Test is a performance test for generating random keys.')
 print(f"Time: {time.asctime()}")
 print('=' * 50)
-with open('settings.json', 'r') as f:
-    settings = json.load(f)
+settings = {
+  "use_static_num": False,
+  "static_number": 50,
+  "key_length": 255,
+  "hex_length": 16
+}
 ifstat = settings['use_static_num']
 key_length = settings['key_length']
 hex_length = settings['hex_length']
